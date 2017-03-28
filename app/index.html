@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>JL Resume</title>
-    <link rel="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.min.js"></script>
 
@@ -13,6 +13,21 @@
     <script src="modules/app-container/app-container.component.js"></script>
   </head>
   <body >
-    <div ng-view></div>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>Justin Lyon</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          sidebar
+        </div>
+        <div class="col-6">
+          content
+          <div ng-view></div>
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>
