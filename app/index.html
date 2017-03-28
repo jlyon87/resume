@@ -9,22 +9,23 @@
 
     <script src="app.module.js"></script>
     <script src="app.config.js"></script>
+    <script src="modules/sidebar/sidebar.module.js"></script>
+    <script src="modules/sidebar/sidebar.component.js"></script>
     <script src="modules/app-container/app-container.module.js"></script>
     <script src="modules/app-container/app-container.component.js"></script>
   </head>
   <body >
-    <div class="container-fluid">
+    <div class="container-fluid" >
       <div class="jumbotron">
         <h1>Justin Lyon</h1>
       </div>
 
       <div class="row">
         <div class="col-2">
-          sidebar
+          <sidebar></sidebar>
         </div>
         <div class="col-6">
-          content
-          <div ng-view></div>
+          <app-container></app-container>
         </div>
       </div>
 
