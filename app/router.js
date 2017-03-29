@@ -21,6 +21,10 @@ router.get('/', function(req, res) {
 	res.sendFile( path.join(__dirname, 'index.html') );
 });
 
+router.get('/home', function(req, res) {
+	res.sendFile( path.join(__dirname, 'index.html') );
+});
+
 router.get('/app.module.js', function(req, res) {
 	res.sendFile( path.join(__dirname, 'app.module.js') );
 });
