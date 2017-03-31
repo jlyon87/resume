@@ -7,8 +7,9 @@
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.min.js"></script>
 
-    <script src="app.module.js"></script>
-    <script src="app.config.js"></script>
+    <script src="js/app.module.js"></script>
+    <script src="js/app.config.js"></script>
+
     <script src="modules/sidebar/sidebar.module.js"></script>
     <script src="modules/sidebar/sidebar.component.js"></script>
     <script src="modules/app-container/app-container.module.js"></script>
@@ -16,22 +17,31 @@
     <base href="/" />
   </head>
   <body >
-    <div class="container-fluid" >
-      <div class="jumbotron">
-        <h1>Justin Lyon</h1>
+    <div class="container" >
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="jumbotron">
+            <h1>Justin Lyon</h1>
+          </div>
+        </div>
       </div>
 
       <div class="row">
-        <div class="col-2">
+        <div class="col-sm-2">
           <sidebar></sidebar>
         </div>
-        <div class="col-6">
+        <div class="col-sm-6">
           <app-container></app-container>
         </div>
       </div>
 
-      <div >
-        Footer
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            Footer
+          </div>
+        </div>
       </div>
     </div>
   </body>

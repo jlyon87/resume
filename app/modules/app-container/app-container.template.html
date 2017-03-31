@@ -1,6 +1,14 @@
-<div>
-  content
-</div>
-<div>
-  {{ $ctrl.message }}
+<div class="row" ng-repeat="item in $ctrl.items">
+  <div class="col">
+    <div class="card">
+      <img ng-src="{{ item.img }}" alt="{{ item.name }}" class="card-img-top">
+      <div class="card-title">
+        {{ item.name }}
+      </div>
+      <div class="card-body">
+        {{ item.message }}
+      </div>
+    </div>
+
+  </div>
 </div>
