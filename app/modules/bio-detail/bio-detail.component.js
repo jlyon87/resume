@@ -7,7 +7,9 @@ angular.module('bioDetail')
       this.item = {
         name : 'Bio',
         img : 'bio.jpg',
-        message : 'bio thingy'
+        message : 'bio thingy',
+        path : 'bio',
+        faClass : 'fa fa-star'
       }
     }
   });

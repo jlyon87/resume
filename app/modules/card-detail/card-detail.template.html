@@ -1,8 +1,10 @@
 <div class="card" >
   <img ng-src="{{ $ctrl.item.img }}" alt="{{ $ctrl.item.name }}" class="card-img-top">
-  <div class="card-title">
-    <i class="fa fa-star" aria-hidden="true"></i>
-    {{ $ctrl.item.name }}
+  <div >
+    <h4 class="card-title">
+      <i class="{{ $ctrl.item.faClass }}" aria-hidden="true"></i>
+      {{ $ctrl.item.name }}
+    </h4>
   </div>
   <div class="card-body">
     {{ $ctrl.item.message }}

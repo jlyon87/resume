@@ -3,5 +3,11 @@ angular.module('resumeApp', [
   'ngRoute',
   'homeGrid',
   'cardDetail',
-  'bioDetail'
+  'bioDetail',
+  'experienceDetail',
+  'educationDetail',
+  'skillsDetail',
+  'certificationsDetail',
+  'socialDetail',
+  'aboutDetail'
 ]);

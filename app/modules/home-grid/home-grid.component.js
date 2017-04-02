@@ -9,43 +9,50 @@ angular.module('homeGrid')
             name : 'Bio',
             img : 'bio.jpg',
             message : 'bio thingy',
-            path : 'bio'
+            path : 'bio',
+            faClass : 'fa fa-star'
           },
           {
             name : 'Experience',
             img : 'experience.jpg',
             message : 'experience thingy',
-            path : 'bio'
+            path : 'experience',
+            faClass : 'fa fa-star'
           },
           {
             name : 'Education',
             img : 'education.jpg',
             message : 'education thingy',
-            path : 'bio'
+            path : 'education',
+            faClass : 'fa fa-star'
           },
           {
             name : 'Skills',
             img : 'skills.jpg',
             message : 'skills thingy',
-            path : 'bio'
+            path : 'skills',
+            faClass : 'fa fa-star'
           },
           {
             name : 'Certifications',
             img : 'certifications.jpg',
             message : 'certifications thingy',
-            path : 'bio'
+            path : 'certifications',
+            faClass : 'fa fa-star'
           },
           {
             name : 'Social Networking',
             img : 'socialNetworking.jpg',
             message : 'socialNetworking thingy',
-            path : 'bio'
+            path : 'social',
+            faClass : 'fa fa-star'
           },
           {
             name : 'About this Site',
             img : 'about.jpg',
             message : 'about thingy',
-            path : 'bio'
+            path : 'about',
+            faClass : 'fa fa-star'
           },
         ]
         this.goTo = function(path) {
