@@ -4,40 +4,62 @@
     <meta charset="utf-8">
     <title>Home</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <script src="js/fa.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.min.js"></script>
 
     <script src="js/app.module.js"></script>
     <script src="js/app.config.js"></script>
 
-    <script src="modules/sidebar/sidebar.module.js"></script>
-    <script src="modules/sidebar/sidebar.component.js"></script>
-    <script src="modules/app-container/app-container.module.js"></script>
-    <script src="modules/app-container/app-container.component.js"></script>
+    <script src="modules/home-grid/home-grid.module.js"></script>
+    <script src="modules/home-grid/home-grid.component.js"></script>
+
+    <script src="modules/card-detail/card-detail.module.js"></script>
+    <script src="modules/card-detail/card-detail.component.js"></script>
+
+    <script src="modules/bio-detail/bio-detail.module.js"></script>
+    <script src="modules/bio-detail/bio-detail.component.js"></script>
+
+    <script src="modules/experience-detail/experience-detail.module.js"></script>
+    <script src="modules/experience-detail/experience-detail.component.js"></script>
+
+    <script src="modules/education-detail/education-detail.module.js"></script>
+    <script src="modules/education-detail/education-detail.component.js"></script>
+
+    <script src="modules/skills-detail/skills-detail.module.js"></script>
+    <script src="modules/skills-detail/skills-detail.component.js"></script>
+
+    <script src="modules/certifications-detail/certifications-detail.module.js"></script>
+    <script src="modules/certifications-detail/certifications-detail.component.js"></script>
+
+    <script src="modules/social-detail/social-detail.module.js"></script>
+    <script src="modules/social-detail/social-detail.component.js"></script>
+
+    <script src="modules/about-detail/about-detail.module.js"></script>
+    <script src="modules/about-detail/about-detail.component.js"></script>
+
     <base href="/" />
   </head>
   <body >
     <div class="container" >
 
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-12">
           <div class="jumbotron">
             <h1>Justin Lyon</h1>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-2">
-          <sidebar></sidebar>
-        </div>
-        <div class="col-sm-6">
-          <app-container></app-container>
+      <div class="row pb-2">
+        <div class="col-12">
+          <ng-view></ng-view>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-12">
           <div class="card">
             Footer
           </div>

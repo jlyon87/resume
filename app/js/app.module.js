@@ -1,6 +1,13 @@
 'use strict';
 angular.module('resumeApp', [
   'ngRoute',
-  'sidebar',
-  'appContainer'
+  'homeGrid',
+  'cardDetail',
+  'bioDetail',
+  'experienceDetail',
+  'educationDetail',
+  'skillsDetail',
+  'certificationsDetail',
+  'socialDetail',
+  'aboutDetail'
 ]);
