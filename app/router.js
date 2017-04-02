@@ -21,4 +21,9 @@ router.use( '/css', express.static( path.join(__dirname, 'css') ));
 router.use( '/js', express.static( path.join(__dirname, 'js') ));
 router.use( '/modules', express.static( path.join(__dirname, 'modules') ));
 
+//Otherwise
+router.get('/*', function(req, res) {
+	res.sendFile( path.join(__dirname, '/index.html') );
+});
+
 module.exports = router;
