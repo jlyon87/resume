@@ -18,6 +18,7 @@ router.get('/favicon5.ico', function(req, res) {
 });
 
 router.use( '/css', express.static( path.join(__dirname, 'css') ));
+router.use( '/fonts', express.static( path.join(__dirname, 'fonts') ));
 router.use( '/js', express.static( path.join(__dirname, 'js') ));
 router.use( '/modules', express.static( path.join(__dirname, 'modules') ));
 

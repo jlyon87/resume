@@ -8,7 +8,10 @@ angular.module('resumeApp')
 
       $routeProvider
         .when('/home', {
-          template : '<app-container></app-container>'
+          template : '<home-grid></home-grid>'
+        })
+        .when('/bio', {
+          template : '<bio-detail></bio-detail>'
         })
         .otherwise('/home');
     }])
